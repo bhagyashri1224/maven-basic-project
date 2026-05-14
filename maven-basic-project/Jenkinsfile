@@ -7,7 +7,8 @@ pipeline {
             steps {
                 echo 'Checking out source code from GitHub...'
                 echo 'Branch: main'
-                echo 'Repository: https://github.com/bhagyashri1224/maven-basic-project/maven-basic-project.git'
+                echo 'Repository: https://github.com/atulkamble/maven-basic-project.git'
+            }
         }
 
         stage('Verify Java Installation') {
@@ -62,7 +63,7 @@ pipeline {
         stage('Execute Application') {
             steps {
                 echo 'Running Java application...'
-                sh 'mvn exec:java -Dexec.mainClass="com.ethans.App"'
+                sh 'mvn exec:java -Dexec.mainClass="com.cloudnautic.App"'
             }
         }
     }
