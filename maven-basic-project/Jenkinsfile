@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Checking out source code from GitHub...'
                 echo 'Branch: main'
-                echo 'Repository: https://github.com/bhagyashri1224/maven-basic-project.git'
+                echo 'Repository: https://github.com/bhagyashri1224/maven-basic-project/maven-basic-project.git'
         }
 
         stage('Verify Java Installation') {
